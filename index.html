@@ -8,12 +8,16 @@
   </head>
   <body>
     <main id="main">
-      <form id="recipe-form-template" onSubmit="handleSubmit()">
-        Name: <input type="text">
-      <br><br>
-        Name: <input type="text">
-      <br><br>
-        Description <input type="text">
+
+      <script id="recipe-form-template" type="text/x-handlebars-template">
+        <form id="recipe-form-template" onSubmit="handleSubmit()">
+          Name: <input type="text" id="name">
+        <br><br>
+          Description: <input type="text" id="description">
+        <br><br>
+          <input type="submit" value="Add Recipe">
+        </form>
+      </script>
 
     </main>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
